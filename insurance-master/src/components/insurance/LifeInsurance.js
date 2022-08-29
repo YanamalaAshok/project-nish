@@ -13,10 +13,10 @@ function LifeInsurance() {
                         Buying the right Life Insurance is not Complicated anymore
                     </h1>
                     <p className="description">
-                    Life insurance is the must for every earning member of a family for not only securing the future
-                     of their families but to live a stress-free life. It is essential tool for the financial security of their 
-                     family members and dependents in the case of their untimely demise. It is a safety net for the dependents that can keep them away from any
-                      foreseen and unforeseen expenditures in the future. Nishkaera offers the best deals for your life insurance
+                        Life insurance is the must for every earning member of a family for not only securing the future
+                        of their families but to live a stress-free life. It is essential tool for the financial security of their
+                        family members and dependents in the case of their untimely demise. It is a safety net for the dependents that can keep them away from any
+                        foreseen and unforeseen expenditures in the future. Nishkaera offers the best deals for your life insurance
                     </p>
 
                     <div className="button-container">
