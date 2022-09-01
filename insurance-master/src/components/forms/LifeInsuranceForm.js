@@ -35,8 +35,7 @@ const HealthForm = () => {
               .required("A Date of Birth is required"),
 
           policyTerm: Yup.string()
-          .oneOf(["pqr", "xyz", "abc"], "Please select a marital status")
-          .required("Please select a sum assured"),
+          .required("Please select Policy term"),
 
           tobacoHabit: Yup.string()
           .oneOf(["yes", "no"], "required")
@@ -124,17 +123,12 @@ const HealthForm = () => {
 							</label>
 
 							<div className="tw-w-2/4">
-								<Field
-									style={{ height: "40px" }}
+							<Field
 									name="policyTerm"
-									className="tw-border-navgreen-500 tw-mb-0.5   tw-border-solid tw-border-2 tw-outline-none  tw-rounded-md tw-h-full tw-w-full"  
-									as="select"
-								>
-									<option value="">Choose your term</option>
-									<option value="xyz">xyz</option>
-									<option value="abc">abc</option>
-									<option value="pqr">pqr</option>
-								</Field>{" "}
+									style={{ height: "40px" }}
+									type="text"
+									className="tw-border-navgreen-500 tw-mb-0.5   tw-border-solid tw-border-2 tw-outline-none  tw-rounded-md tw-h-full tw-w-full"  placeholder="Policy Term"
+								/>{" "}
 								<div className="tw-text-red-500 tw-mt-4 tw-text-sm tw-font-semibold">
 									<ErrorMessage name="policyTerm" />{" "}
 								</div>

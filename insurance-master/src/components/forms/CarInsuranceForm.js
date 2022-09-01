@@ -17,7 +17,6 @@ const CarForm = () => {
 	const [step, setStep] = useState(1)
 	const FirstForm = () => (
 		<div className="tw-flex tw-w-2/4">
-
 			<Formik
 				initialValues={{
 					title: "",
@@ -40,13 +39,11 @@ const CarForm = () => {
 
 
 					model: Yup.string()
-						.oneOf(["pqr", "xyz", "abc"], "Please select a marital status")
+						
 						.required("Please select a model"),
 					make: Yup.string()
-						.oneOf(["pqr", "xyz", "abc"], "Please select a marital status")
 						.required("Please select make"),
 					variant: Yup.string()
-						.oneOf(["pqr", "xyz", "abc"], "Please select a marital status")
 						.required("Please select variant"),
 					pucCertification: Yup.string()
 						.oneOf(["yes", "no"], "required")
@@ -80,7 +77,7 @@ const CarForm = () => {
 									name="dateofpurchase"
 									type="text"
 									style={{ height: "40px" }}
-									className=" tw-border-navgreen-500 tw-mb-0.5   tw-border-solid tw-border-2 tw-outline-none  tw-rounded-md tw-h-full tw-w-full  "
+									className=" tw-border-navgreen-500 tw-mb-0.5   tw-border-solid tw-border-2 tw-outline-none  tw-rounded-md tw-h-full tw-w-full  " placeholder="Enter date of registration"
 								/>{" "}
 								<div className="tw-text-red-500 tw-mt-4 tw-text-sm tw-font-semibold">
 									<ErrorMessage name="dateofpurchase" />{" "}
@@ -103,7 +100,7 @@ const CarForm = () => {
 									name="RtoNum"
 									style={{ height: "40px" }}
 									type="text"
-									className="tw-border-navgreen-500  tw-mb-0.5   tw-border-solid tw-border-2 tw-outline-none  tw-rounded-md tw-h-full tw-w-full  "
+									className="tw-border-navgreen-500  tw-mb-0.5   tw-border-solid tw-border-2 tw-outline-none  tw-rounded-md tw-h-full tw-w-full  " placeholder="Enter RTO number"
 								/>{" "}
 								<div className="tw-text-red-500 tw-mt-4 tw-text-sm tw-font-semibold">
 									<ErrorMessage name="RtoNum" />{" "}
@@ -122,17 +119,12 @@ const CarForm = () => {
 							</label>
 
 							<div className="tw-w-2/4">
-								<Field
-									style={{ height: "40px" }}
+							<Field
 									name="make"
-									className="tw-my-select tw-border-navgreen-500  tw-mb-0.5   tw-border-solid tw-border-2 tw-outline-none  tw-rounded-md tw-h-full tw-w-full  "
-									as="select"
-								>
-									<option value="">Select make</option>
-									<option value="xyz">xyz</option>
-									<option value="abc">abc.</option>
-									<option value="pqr">pqr.</option>
-								</Field>{" "}
+									style={{ height: "40px" }}
+									type="text"
+									className="tw-border-navgreen-500 tw-mb-0.5   tw-border-solid tw-border-2 tw-outline-none  tw-rounded-md tw-h-full tw-w-full"  placeholder="Enter Make"
+								/>{" "}
 								<div className="tw-text-red-500 tw-mt-4 tw-text-sm tw-font-semibold">
 									<ErrorMessage name="make" />{" "}
 								</div>
@@ -149,17 +141,12 @@ const CarForm = () => {
 							</label>
 
 							<div className="tw-w-2/4">
-								<Field
+							<Field
 									name="model"
 									style={{ height: "40px" }}
-									className="tw-my-select tw-border-navgreen-500  tw-mb-0.5   tw-border-solid tw-border-2 tw-outline-none  tw-rounded-md tw-h-full tw-w-full bg-gray-50 text-gray-900  dark:bg-gray-700 dark:placeholder-gray-400"
-									as="select"
-								>
-									<option value="">Select model</option>
-									<option value="xyz">xyz</option>
-									<option value="abc">abc.</option>
-									<option value="pqr">pqr.</option>
-								</Field>{" "}
+									type="text"
+									className="tw-border-navgreen-500 tw-mb-0.5   tw-border-solid tw-border-2 tw-outline-none  tw-rounded-md tw-h-full tw-w-full"  placeholder="Select Model"
+								/>{" "}
 								<div className="tw-text-red-500 tw-mt-4 tw-text-sm tw-font-semibold">
 									<ErrorMessage name="model" />{" "}
 								</div>
@@ -176,17 +163,12 @@ const CarForm = () => {
 							</label>
 
 							<div className="tw-w-2/4 tw-h-full">
-								<Field
+							<Field
 									name="variant"
 									style={{ height: "40px" }}
-									className="tw-my-select tw-border-navgreen-500  tw-mb-0.5  tw-border-solid tw-border-2 tw-outline-none  tw-rounded-md tw-h-full tw-w-full  "
-									as="select"
-								>
-									<option value="">Select variant</option>
-									<option value="xyz">xyz</option>
-									<option value="abc">abc.</option>
-									<option value="pqr">pqr.</option>
-								</Field>{" "}
+									type="text"
+									className="tw-border-navgreen-500 tw-mb-0.5   tw-border-solid tw-border-2 tw-outline-none  tw-rounded-md tw-h-full tw-w-full"  placeholder="Select Variant"
+								/>{" "}
 								<div className="tw-text-red-500 tw-mt-4 tw-text-sm tw-font-semibold">
 									<ErrorMessage name="variant" />{" "}
 								</div>
